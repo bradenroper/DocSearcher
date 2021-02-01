@@ -150,7 +150,7 @@ namespace DocSearcher
             }
 
             // Split terms using a few delimiters
-            List<string> searchTerms = new List<string>(content.Split(" \n\r\t,".ToCharArray()));
+            List<string> searchTerms = new List<string>(content.Split("\n\r\t".ToCharArray()));
             searchTerms.RemoveAll(term => term == "");
 
             return searchTerms;

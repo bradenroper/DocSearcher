@@ -25,7 +25,7 @@
         <Button x:Name="SearchButton" Content="Search!" HorizontalAlignment="Left" Margin="142,295,0,0" VerticalAlignment="Top" Width="140" Click="Search_Button_Click" Grid.Column="1"/>
         <TextBox x:Name="SearchTerms" Grid.Column="1" HorizontalAlignment="Left" Margin="212,90,0,0" TextWrapping="Wrap" AcceptsReturn="true" TextChanged="Search_Terms_Changed" GotFocus="SearchTerms_GotFocus" LostFocus="SearchTerms_LostFocus" VerticalAlignment="Top" Width="258" Height="152"/>
         <Label x:Name="TermsCountLabel" Content="x terms" HorizontalAlignment="Left" Margin="212,242,0,0" VerticalAlignment="Top" Width="258" FontStyle="Italic" Grid.Column="1" HorizontalContentAlignment="Center"/>
-        <Label x:Name="PlaceholderLabel" Content="One, Two, Three&#xA;Four Five Six&#xA;Seven&#xA;Eight" IsHitTestVisible="False" Grid.Column="1" HorizontalAlignment="Left" Margin="212,90,0,0" VerticalAlignment="Top" Height="95" Width="129" FontStyle="Italic" Foreground="#FFB2B2B2"/>
+        <Label x:Name="PlaceholderLabel" Content="One&#xD;&#xA;Two&#xD;&#xA;Third Term&#xD;&#xA;A Fourth, Term" IsHitTestVisible="False" Grid.Column="1" HorizontalAlignment="Left" Margin="212,90,0,0" VerticalAlignment="Top" Height="95" Width="129" FontStyle="Italic" Foreground="#FFB2B2B2"/>
 
     </Grid>
 </Window>

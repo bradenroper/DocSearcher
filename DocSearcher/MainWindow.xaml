@@ -1,0 +1,31 @@
+﻿<Window x:Class="DocSearcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocSearcher"
+        mc:Ignorable="d"
+        Title="Doc Searcher" Height="400" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="342*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFE8CCFF" Offset="1"/>
+                <GradientStop Color="#FFF8F0FF" Offset="0"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Button x:Name="ChooseFileButton" Content="Choose File" HorizontalAlignment="Left" Margin="23,63,0,0" VerticalAlignment="Top" Width="140" Click="Choose_File_Button_Click" Grid.ColumnSpan="2"/>
+        <Label x:Name="FileNameLabel" Content="No file chosen." HorizontalAlignment="Left" Margin="23,90,0,0" VerticalAlignment="Top" Width="260" FontStyle="Italic" Grid.ColumnSpan="2"/>
+        <Label Content="1. Choose File to Search" HorizontalAlignment="Left" Margin="23,30,0,0" VerticalAlignment="Top"  Width="277" FontWeight="Bold" Grid.ColumnSpan="2" FontSize="14"/>
+        <Label Content="2. Edit Search Terms" HorizontalAlignment="Left" Margin="212,30,0,0" VerticalAlignment="Top"  Width="258" FontWeight="Bold" Grid.Column="1" FontSize="14"/>
+        <CheckBox x:Name="CaseSensitiveCheckbox" Content="Case Sensitive" HorizontalAlignment="Left" Margin="212,64,0,0" VerticalAlignment="Top" Width="140" Grid.Column="1"/>
+        <Button x:Name="SearchButton" Content="Search!" HorizontalAlignment="Left" Margin="142,295,0,0" VerticalAlignment="Top" Width="140" Click="Search_Button_Click" Grid.Column="1"/>
+        <TextBox x:Name="SearchTerms" Grid.Column="1" HorizontalAlignment="Left" Margin="212,90,0,0" TextWrapping="Wrap" AcceptsReturn="true" TextChanged="Search_Terms_Changed" GotFocus="SearchTerms_GotFocus" LostFocus="SearchTerms_LostFocus" VerticalAlignment="Top" Width="258" Height="152"/>
+        <Label x:Name="TermsCountLabel" Content="x terms" HorizontalAlignment="Left" Margin="212,242,0,0" VerticalAlignment="Top" Width="258" FontStyle="Italic" Grid.Column="1" HorizontalContentAlignment="Center"/>
+        <Label x:Name="PlaceholderLabel" Content="One, Two, Three&#xA;Four Five Six&#xA;Seven&#xA;Eight" IsHitTestVisible="False" Grid.Column="1" HorizontalAlignment="Left" Margin="212,90,0,0" VerticalAlignment="Top" Height="95" Width="129" FontStyle="Italic" Foreground="#FFB2B2B2"/>
+
+    </Grid>
+</Window>

@@ -17,11 +17,19 @@ namespace DocSearcher
     /// </summary>
     public partial class ResultsWindow : Window
     {
+        /// <summary>
+        /// Initialize Results window.
+        /// </summary>
         public ResultsWindow()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// On click of the close/okay button. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
